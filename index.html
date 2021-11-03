@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="css/estilo.css" rel="stylesheet" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesCategoria.js"></script>  
+    <script type="text/javascript" src="js/funcionesFinca.js"></script>  
+    <script type="text/javascript" src="js/funcionesCliente.js"></script>  
+    <script type="text/javascript" src="js/funcionesMensaje.js"></script>  
+    <script type="text/javascript" src="js/funcionesReservaciones.js"></script>  
+    <script type="text/javascript">window.onload = autoInicioCategoria();</script>
+    <script type="text/javascript">window.onload = autoInicioFinca();</script>
+    <script type="text/javascript">window.onload = autoInicioCliente();</script>
+    <script type="text/javascript">window.onload = autoInicioMensaje();</script>
+    <script type="text/javascript">window.onload = autoInicioReservacion();</script>
+</head>
+
+<body>
+    <h1>Proyecto Aplicacion WEB Alquiler de Fincas</h1>
+    <h2>Categoria</h2>
+    <div id="resultado1"></div>
+    <script type="text/javascript"> 
+    // window.onload = autoInicioCategoria();
+    </script>
+    <div>
+        <input type="text" id="Cname" placeholder="nombre">
+        <input type="text" id="Cdescription" placeholder="descripcion">
+  
+    </div>
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+
+    <!--Tabla Finca-->
+    <h2>Finca</h2>
+    <div id="resultado2"></div>
+    <script type="text/javascript"> 
+    // window.onload = autoInicioFinca();
+    </script>
+    <div>
+        <input type="text" id="Fname" placeholder="nombre">
+        <input type="text" id="Faddress" placeholder="dirección">
+        <input type="number" id="Fextension" placeholder="extensión">
+        <input type="text" id="Fdescription" placeholder="descripcion">
+        <select id="select-category"></select>
+    </div>
+    <button onclick="guardarInformacionFinca()">Guardar Finca</button>
+   
+    <!--Tabla Cliente-->
+    <h2>Cliente </h2>
+    <div id="resultado3"></div>
+    <script type="text/javascript"> 
+    // window.onload = autoInicioCliente();
+    </script>
+    <div>
+        <input type="text" id="Clemail" placeholder="email">
+        <input type="text" id="Clpassword" placeholder="password">
+        <input type="text" id="Clname" placeholder="nombre">
+        <input type="number" id="Clage" placeholder="edad">
+    </div>
+    <button onclick="guardarInformacionCliente()">Guardar Cliente</button>
+
+    <!--Tabla Mensaje-->
+    <h2>Mensaje </h2>
+    <div id="resultado4"></div>
+    <script type="text/javascript"> 
+    // window.onload = autoInicioMensaje();
+    </script>
+    <div>
+        <!-- <input type="text" id="messageText" placeholder="Texto"> -->
+        <textarea rows="5" cols="40" id="messageText" placeholder="Escribe tu mensaje"></textarea>
+    </div>
+    <button onclick="guardarInformacionMensaje()">Guardar Mensaje</button>
+
+    <!--Tabla Reservacion-->
+    <h2>Reservaciones</h2>
+    <div id="resultado5"></div>
+    <script type="text/javascript"> 
+    // window.onload = autoInicioReservacion();
+    </script>
+    <div>
+        <input type="date" id="startDate" placeholder="fecha inicial">
+        <input type="date" id="devolutionDate" placeholder="fecha final">
+    </div>
+    <button onclick="guardarInformacionReservacion()">Guardar Reservación</button>
+
+</body>
+
+
+</html>
